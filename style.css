@@ -1,65 +1,79 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-size: 16px;
-    line-height: 1.6;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    background: linear-gradient(45deg, #ffbe0b, #8338ec);
-    background-size: 200% 200%;
+  background: linear-gradient(45deg, #ffbe0b, #8338ec);
+  background-size: 200% 200%;
 
-    animation: Gradient 40s ease-in-out infinite;
+  animation: Gradient 40s ease-in-out infinite;
 }
 
 .container-inner {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    /* background: linear-gradient(315deg, #e83d84, #3de864, #e8bb3d); */
-    background: linear-gradient(315deg, #fb5607, #3a86ff);
-    background-size: 600% 600%;
+  /* background: linear-gradient(315deg, #e83d84, #3de864, #e8bb3d); */
+  background: linear-gradient(315deg, #fb5607, #3a86ff);
+  background-size: 600% 600%;
 
-    animation: Gradient 10s ease-in-out infinite;
+  animation: Gradient 10s ease-in-out infinite;
 }
 
 h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .cursor {
-    display: inline-block;
-    width: 10px;
-    height: 50px;
-    margin-top: 10px;
-    align-self: center;
-    background-color: #fff;
+  font-size: 4rem;
+}
+
+.outerspan::after {
+  /* align-self: center; */
+  content: "";
+  display: block;
+  width: 98%;
+  height: 5px;
+  background-color: black;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s linear;
+  margin-top: 2px;
+}
+
+.outerspan:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }

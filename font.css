@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&display=swap");
 
 .lato-bold {
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
